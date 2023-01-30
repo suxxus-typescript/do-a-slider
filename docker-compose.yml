@@ -1,0 +1,16 @@
+version: "0"
+name:  do-a-slider 
+services:
+  develop:
+    image: vainilla-ts/dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: do-slider
+    volumes:
+      - .:/app
+      - ./src:/app
+      - ./public:/app
+      - ./node_modules:/app
+    ports:
+      - 5800:5173
