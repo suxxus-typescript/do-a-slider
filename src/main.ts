@@ -1,30 +1,12 @@
 import "./style.css";
-import typescriptLogo from "./typescript.svg";
-import { setupCounter } from "./counter";
 
 const App = document.querySelector("#app");
-const Counter = document.querySelector("#counter");
 
-if (App && App.innerHTML) {
+if (App) {
+  console.log("- ", App);
   App.innerHTML = `
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
+  test
   </div>
 `;
-}
-
-if (Counter) {
-  setupCounter(Counter as HTMLButtonElement);
 }
