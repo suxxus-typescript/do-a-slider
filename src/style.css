@@ -80,3 +80,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
+
+.button-circle--selected {
+  background-color: white;
+}
